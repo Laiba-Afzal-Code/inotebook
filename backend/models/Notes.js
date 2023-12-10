@@ -2,15 +2,19 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const UserSchema = new Schema({
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'user'
+    },
 title:{
     type: String,
     require: true
 },
-discription:{
+description:{
     type: String,
     require: true,
 },
-teg:{
+tag:{
     type: String,
 },
 date:{
