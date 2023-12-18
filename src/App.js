@@ -15,7 +15,6 @@ function App() {
     <Navbar/>
     <Alert message="This is best Note app"/>
     <div className="container">
-    {/* <Home/> */}
     <Routes>
     <Route exact path="/home" element={< Home/>}></Route>
     <Route exact path="/about" element={< About/>}></Route>
