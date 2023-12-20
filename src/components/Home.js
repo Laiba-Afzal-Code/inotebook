@@ -1,10 +1,11 @@
 import React from "react";
 import Note from "./Note";
 
-export const Home = () => {
+export const Home = (props) => {
+  const {showAlert} = props;
   return (
     <div>
-      <Note />
+      <Note showAlert={showAlert}/>
     </div>
   );
 };

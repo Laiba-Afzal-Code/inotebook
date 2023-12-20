@@ -57,9 +57,22 @@ i {
   background-position-x: center;
   box-shadow: 20px 20px 50px 20px rgb(236, 231, 231);
   font-family: 'Kdam Thmor Pro', sans-serif;
+  padding: 30px ;
 }
 .mainfoot{
 display: flex;
-justify-content: space-between;
-
+flex-direction: column;
+justify-content: space-evenly;
+margin-left: 22px;
+}
+.fot{
+  display: flex;
+ justify-content: center;
+padding: 12px;
+}
+.alert{
+  position: fixed;
+  top: 52px;
+  right: 12px;
+  z-index: 1;
 }

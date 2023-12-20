@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const Login = (props) => {
 
     const [credentials, setCredentials] = useState({email: "", password: ""});
     // we use usenavigate from react-router-dom to redirict our user on home page!
@@ -25,9 +25,10 @@ const Login = () => {
             //save the authtoken and redireact 
             localStorage.setItem('token', json.authtoken);
             navigate('/home');
+            props.showAlert("Logged In Successfully", "success")
           }
           else{
-            alert("invalid credentials!")
+           props.showAlert("Invaild Details", "danger")
           }
         };
         // onchange function on input to get and do changes

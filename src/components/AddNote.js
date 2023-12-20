@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import NoteContext from "../context/notes/NoteContext";
-const AddNote = () => {
+const AddNote = (props) => {
   const context = useContext(NoteContext);
   const { addNotes } = context;
   const [note, setNotes] = useState({ title: "", description: "", tag: "" });
@@ -8,12 +8,16 @@ const AddNote = () => {
     e.preventDefault();
     addNotes(note.title, note.description, note.tag);
     setNotes({ title: "", description: "", tag: "" });
+    props.showAlert("Added Successfully", "success")
   };
   const onChange = (e) => {
    setNotes({...note, [e.target.name]: e.target.value })
   };
   return (
     <div>
+      <div className="conatiner my-5">
+      <h1><i className="fa-solid fa-feather-pointed mx-2"></i>Create your Informative notes On iNotebook</h1>
+      </div>
       <form>
         <div className="mb-3">
           <label htmlFor="title" className="form-label fw-bold">

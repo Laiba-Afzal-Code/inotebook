@@ -9,7 +9,7 @@ const About = () => {
   <div className="container">
     <header className='about my-5'>
       <div className="back my-5">
-      <h1 className='my-3'>About Us</h1></div>
+      <h1 className='my-3'><i className="fa-regular fa-address-card mx-2"></i>About Us</h1></div>
     <h1>Welcome to iNotebook - Your Digital Notepad for Seamless Productivity</h1>
     <h5 className='peragraph my-5'>At iNotebook, we believe in the power of efficient note-taking to transform the way you work, learn, and create. Our web app is designed with a singular mission: to provide a streamlined and intuitive platform for effortlessly capturing your thoughts, ideas, and inspirations.</h5>
     <h2 className='back about-head my-5 py-3'>Why iNotebook?</h2>

@@ -12,8 +12,7 @@ const NoteState = (props) => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjU3NGMyNjczYzU1M2U0ZmU2YjhkZTY0In0sImlhdCI6MTcwMjE1ODI0NX0.TFpHcecUcmHKzpHmgL3iNEyTMROl-e2KpXM1j7efJsY",
+        "auth-token":localStorage.getItem('token'),
       },
     });
     const json = await response.json();
@@ -28,8 +27,7 @@ const NoteState = (props) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjU3NGMyNjczYzU1M2U0ZmU2YjhkZTY0In0sImlhdCI6MTcwMjE1ODI0NX0.TFpHcecUcmHKzpHmgL3iNEyTMROl-e2KpXM1j7efJsY",
+        "auth-token": localStorage.getItem('token'),
       },
       body: JSON.stringify({ title, description, tag }),
     });
@@ -43,8 +41,7 @@ const NoteState = (props) => {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjU3NGMyNjczYzU1M2U0ZmU2YjhkZTY0In0sImlhdCI6MTcwMjE1ODI0NX0.TFpHcecUcmHKzpHmgL3iNEyTMROl-e2KpXM1j7efJsY",
+        "auth-token": localStorage.getItem('token'),
       },
       body: JSON.stringify({ title, description, tag }),
     });
@@ -73,8 +70,7 @@ const NoteState = (props) => {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjU3NGMyNjczYzU1M2U0ZmU2YjhkZTY0In0sImlhdCI6MTcwMjE1ODI0NX0.TFpHcecUcmHKzpHmgL3iNEyTMROl-e2KpXM1j7efJsY",
+        "auth-token":localStorage.getItem('token'),
       },
     });
     const json = await response.json();
@@ -86,8 +82,7 @@ const NoteState = (props) => {
   };
   return (
     <NoteContext.Provider
-      value={{ notes, addNotes, editNotes, deleteNotes, getNotes }}
-    >
+      value={{ notes, addNotes, editNotes, deleteNotes, getNotes }}>
       {props.children}
     </NoteContext.Provider>
   );

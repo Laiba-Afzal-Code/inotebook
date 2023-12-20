@@ -2,12 +2,19 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import NoteContext from "../context/notes/NoteContext";
 import Noteitem from "./Noteitem";
 import AddNote from "./AddNote";
+import { useNavigate } from "react-router-dom";
 
-const Note = () => {
+const Note = (props) => {
   const context = useContext(NoteContext);
+  let navigate = useNavigate();
   const { notes, getNotes, editNotes } = context;
   useEffect(() => {
-    getNotes();
+    if(localStorage.getItem('token')){
+      getNotes();
+    }
+    else{
+      navigate('/login');
+    }
     // eslint-disable-next-line
   }, []);
   const ref = useRef(null);
@@ -18,7 +25,6 @@ const Note = () => {
     edescription: "",
     etag: "",
   });
-
   const updateNote = (currentNote) => {
     ref.current.click();
     setNotes({
@@ -29,15 +35,16 @@ const Note = () => {
     });
   };
   const handleOnclick = (e) => {
-    editNotes(note.id, note.edescription, note.etitle, note.etag);
+    editNotes(note.id,  note.etitle, note.edescription, note.etag);
     refClose.current.click();
+    props.showAlert("Update Successfully", "success")
   };
   const onChange = (e) => {
     setNotes({ ...note, [e.target.name]: e.target.value });
   };
   return (
     <>
-      <AddNote />
+      <AddNote showAlert={props.showAlert}/>
       <button
         ref={ref}
         type="button"
@@ -132,13 +139,13 @@ const Note = () => {
           </div>
         </div>
       </div>
-      <div className="row my-4">
-        <h1>Your Notes</h1>
+      <div className="row my-5 py-5">
+        <h1><i className="fa-solid fa-book mx-2"></i>My Notes</h1>
         <div className="container mx-3">
         {notes.length===0 && "No notes for display!"}</div>
         {notes?.map((note) => {
           return (
-            <Noteitem key={note._id} updateNote={updateNote} note={note} />
+            <Noteitem key={note._id} updateNote={updateNote} showAlert={props.showAlert} note={note} />
           );
         })}
       </div>
