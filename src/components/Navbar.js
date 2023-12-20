@@ -1,15 +1,14 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  // use useLocation to show active buton if they are active
   let location = useLocation();
-  useEffect(()=>{
-    console.log(location.pathname)
-  }, [location])
   return (
     <nav className="navbar navbar-expand-lg bg-light fw-bold bg-body-light">
     <div className="container-fluid">
-      <Link className="navbar-brand" to="/home">iNoteBook<i className="bi bi-feather" /> </Link>
+    <img src="https://banner2.cleanpng.com/20180327/tpq/kisspng-scythe-don-t-get-caught-book-computer-icons-clip-a-store-shelf-5ab9e4f04332c2.4928392715221322082753.jpg" alt="iNotebook"  width={50}/>
+      <Link className="navbar-brand" to="/home">iNoteBook</Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -22,9 +21,9 @@ const Navbar = () => {
             <Link className={`nav-link ${location.pathname ==="/about"? "active": ""}`} to="/about">About</Link>
           </li>
         </ul>
-        <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button className="btn btn-success" type="submit">Search</button>
+        <form className="d-flex" role="button">
+         <Link className='btn btn-dark mx-3' to='/login'>LogIn</Link>
+         <Link className='btn btn-dark mx-3' to='/signup'>SignUp</Link>
         </form>
       </div>
     </div>
