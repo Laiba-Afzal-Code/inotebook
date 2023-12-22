@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+<h1>React iNotebook App</h1>
+<h5>I created this app to create notes allowing users to update and delete their notes. our user create their notes with Titles, Descriptions, and Tags and user and their notes are saved in a database. </h5>
+<h2>Using React</h2>
+<h3>Backend/Code</h3>
+<h3>Frontend/Code</h3>
+<h3>MongooDB/Code</h3>
+<h3>Html/JSX, CSS, JavaScript, React, Nodejs, Bootstrap, Deploment!</h3>
+<h1>GitHub Deployment Url</h1>
+<a href="https://laiba-afzal-code.github.io/inotebook/">Open website and create your Informative Notes on iNotebook-App</a>
+<h1>Functionality</h1>
+<h3>Create User</h3>
+<h3>Authenticate user </h3>
+<h3>Add Notes</h3>
+<h3>Add Notes</h3>
+<h3>Add Notes</h3>
+<h3>Valid-user date</h3>
+<h3>Buttons</h3>
+<h3>Update note & delete note</h3>
+<h3>Preview notes</h3>
+<h3>Footer with acces all pages!</h3>
+<h1>Home-Page</h1>
+<img src="/noteimg/notehome.png" alt="Home-page-note-app">
+<h1>SignUp-Page</h1>
+<img src="/noteimg/notesign.png" alt="sign-up">
+<h1>LogIn-Page</h1>
+<img src="/noteimg/notelog.png" alt="log-in-page">
+<h1>About-Page</h1>
+<img src="/noteimg/noteabout.png" alt="About-page-Inotebook">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2>Full-Satck Development</h2>
+<h3>we created other best project soo explore my code and enjoy coding!
+    If you see and=y mistake and you feel you add any other Functionalityin this app soo pull an amazing request now!
+</h3>
+<h2>Thanks for coming on GitHub profile Best of Luck Enjoy Coding(</>)</h2>
+<h1>LAIBA-AFZAL-CODE</h1>
